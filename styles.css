@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+*{
+    font-family: 'Montserrat','Abril FatFace','cursive';
+    font-weight: 600;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+}
+
+                                    /* tête de page */
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+    width: 170px;
+}
+
+nav.nav{
+    display: flex;
+}
+
+section.top-page{
+    background: url(Images/bg.jpg);
+    background-size: cover;
+    padding: 25px;
+    height: 95vh;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 800px;
+    margin-left: 30px;    
+ }
+
+nav.nav li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow: 3px 3px 1px black;
+}
+
+nav.nav li a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    text-shadow: 3px 3px 1px white;
+    transition: 0.25s;
+}
+
+.big-title{
+    color: white;
+    font-family: 'Abril FatFace, Montserrat';
+    font-size: 100px;
+    font-weight: 200;
+    width: 60%;
+    margin-left: 20px;
+    text-shadow: 3px 3px 1px black;
+}
+
+/* Services */
+
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.services-details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-image{
+    font-size: 50px;
+    color: #000000DF;
+}
+
+.service-type {
+    font-weight: 600;
+    width: 210px;
+    text-align: center;
+}
+
+.sportives-title{
+    font-family: 'Abril FatFace, Montserrat';
+    font-weight: 100;
+    font-size: 50px;
+    position: relative;
+}
+
+.sportives-title::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.sportives{
+    margin: 100px;
+}
+
+.sportives-cars {
+    min-height: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.car-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.car1 {
+    background-image: url(Images/Sportives/McLaren720s.jpg);
+}
+
+.car2 {
+    background-image: url(Images/Sportives/LamborghiniAventador.png);
+}
+
+.car3 {
+    background-image: url(Images/Sportives/BugattiChiron.jpg);
+}
+
+.car4 {
+    background-image: url(Images/VoitureDeLuxe/AstonMartin.jpg);
+}
+
+.car5 {
+    background-image: url(Images/VoitureDeLuxe/Bentley.jpg);
+}
+
+.car6 {
+    background-image: url(Images/VoitureDeLuxe/RollsRoyce.jpg);
+}
+.car7 {
+    background-image: url(Images/Nouveau/TeslaRoadster.jpg);
+}
+.car8 {
+    background-image: url(Images/Nouveau/MercedesVisionAvtr.jpg);
+}
+
+.car-details{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color:#484D4CAF;
+    padding: 5px 0px;
+}
+
+.car-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    margin-left: 20px;
+}
+
+.car-price {
+    color: #000000DF;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 20px;
+} 
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
